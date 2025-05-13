@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <title>Intrebari 1-82</title>
+  <style>
+    .question {
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .question p {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .answer {
+      display: block;
+      margin: 5px 0;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .answer.correct {
+      background-color: #c8e6c9;
+      border-color: #2e7d32;
+    }
+
+    .answer.incorrect {
+      background-color: #ffcdd2;
+      border-color: #c62828;
+    }
+
+    .reset-button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .reset-button:hover {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+
+<div id="scoreboard" style="position: fixed; top: 50px; right: 10px; background: #f8f8f8; padding: 10px; border: 1px solid #ccc; border-radius: 8px; font-family: sans-serif;">
+  ✅ Corecte: <span id="correctCount">0</span><br />
+  ❌ Greșite: <span id="incorrectCount">0</span><br />
+  ❓ Nerăspunse: <span id="unansweredCount">10</span>
+</div>
+
+
+
+
+
+  <div class="question">
+  <p>1. Dreptul de vot se exercită de la vârsta de:</p>
+  <div class="answer" data-correct="true">a) 18 ani</div>
+  <div class="answer" data-correct="false">b) 25 ani</div>
+  <div class="answer" data-correct="false">c) 23 ani</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>2. Identificați expresia care exprimă întocmai elementele constituționale ale sistemului electoral al Republicii Moldova:</p>
+  <div class="answer" data-correct="false">a) Alegerile sunt periodice și au loc prin sufragiu universal, egal și secret</div>
+  <div class="answer" data-correct="true">b) Alegerile sunt periodice și au loc prin sufragiu universal, egal, direct, secret și liber exprimat</div>
+  <div class="answer" data-correct="false">c) Alegerile sunt periodice și au loc prin sufragiu cenzitar, egal, direct, secret și liber exprimat</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>3. Caracterul liber exprimat al votului înseamnă:</p>
+  <div class="answer" data-correct="false">a) Alegătorul este liber să-și afișeze opțiunea electorală</div>
+  <div class="answer" data-correct="true">b) Alegătorul își poate forma și exprima liber opțiunea, fără a fi influențat de cineva și fără a se exercita presiuni asupra sa, precum și liber de a participa sau de a nu participa la scrutin, iar atunci când participă să exprime sau nu o opțiune electorală</div>
+  <div class="answer" data-correct="false">c) Alegătorul votează personal, iar votarea în locul unei alte persoane este interzisă</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>4. Suveranitatea națională aparține:</p>
+  <div class="answer" data-correct="false">a) Partidului (sau coaliției de partide) aflat la guvernare</div>
+  <div class="answer" data-correct="false">b) Președintelui Republicii Moldova</div>
+  <div class="answer" data-correct="true">c) Poporului Republicii Moldova</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>5. Alegeți expresia corectă:</p>
+  <div class="answer" data-correct="false">a) Secretul votului este exclusiv un drept al cetățeanului</div>
+  <div class="answer" data-correct="false">b) Păstrarea secretului votului constituie exclusiv o obligație a cetățeanului de a nu divulga opțiunea sa electorală</div>
+  <div class="answer" data-correct="true">c) Secretul votului este un drept al cetățeanului care îi garantează libertatea exprimării opțiunii sale electorale și constituie o obligație de a nu divulga opțiunea sa electorală</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>6. Alegerea Parlamentului se efectuează într-o singură circumscripție electorală națională, în care se aleg:</p>
+  <div class="answer" data-correct="false">a) 103 deputați</div>
+  <div class="answer" data-correct="true">b) 101 deputați</div>
+  <div class="answer" data-correct="false">c) 71 deputați</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>7. Revizuirea Constituției poate fi inițiată de:</p>
+  <div class="answer" data-correct="false">a) Un număr de cel puțin 200000 de cetățeni ai Republicii Moldova cu drept de vot, care trebuie să provină din cel puțin jumătate din unitățile administrativ-teritoriale de nivelul doi, iar în fiecare din ele trebuie să fie înregistrate cel puțin 20000 de semnături în sprijinul acestei inițiative</div>
+  <div class="answer" data-correct="false">b) Un număr de cel puțin o treime de deputați în Parlament</div>
+  <div class="answer" data-correct="true">c) Ambii subiecți indicați la lit. a) și b)</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>8. Mandatul Președintelui Republicii Moldova durează 4 ani și se exercită de la data:</p>
+  <div class="answer" data-correct="false">a) Validării mandatului de către Curtea Constituțională</div>
+  <div class="answer" data-correct="true">b) Depunerii jurământului în fața Parlamentului și a Curții Constituționale</div>
+  <div class="answer" data-correct="false">c) Declarării candidatului ales de către Comisia Electorală Centrală</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+
+<div class="question">
+  <p>9. Vacanța funcției de Președinte al Republicii Moldova intervine în caz de:</p>
+  <div class="answer" data-correct="true">a) Expirare a mandatului, demisie, demitere, imposibilitate definitivă a exercitării atribuțiilor sau deces</div>
+  <div class="answer" data-correct="false">b) Expirare a mandatului, demisie sau deces</div>
+  <div class="answer" data-correct="false">c) Demisie, expirare a mandatului, demitere, suspendare din funcție sau deces</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+
+<div class="question">
+  <p>10. Potrivit art. 135 din Constituția Republicii Moldova, Curtea Constituțională confirmă rezultatele:</p>
+  <div class="answer" data-correct="true">a) Referendumurilor republicane, alegerii Parlamentului și a Președintelui Republicii Moldova</div>
+  <div class="answer" data-correct="false">b) Doar referendumurilor republicane constituționale și alegerii Președintelui Republicii Moldova</div>
+  <div class="answer" data-correct="false">c) Alegerilor parlamentare, prezidențiale și locale generale</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+
+<div class="question">
+  <p>11. Președintele Republicii Moldova își exercită mandatul până la:</p>
+  <div class="answer" data-correct="false">a) Validarea mandatului Președintelui nou-ales</div>
+  <div class="answer" data-correct="false">b) Confirmarea rezultatelor alegerii noului Președinte</div>
+  <div class="answer" data-correct="true">c) Depunerea jurământului de către Președintele nou-ales</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>12. Constituția Republicii Moldova nu poate fi revizuită pe durata stării de urgență, de asediu și de război:</p>
+  <div class="answer" data-correct="true">a) Adevărat</div>
+  <div class="answer" data-correct="false">b) Fals</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>13. În caz de vacanță a funcției de Președinte al Republicii Moldova în urma demisiei, demiterii, a imposibilității definitive de a-și exercita atribuțiile sau a decesului, alegerile se organizează în termen de:</p>
+  <div class="answer" data-correct="false">a) 45 de zile de la data la care a intervenit vacanța funcției</div>
+  <div class="answer" data-correct="true">b) 2 luni de la data la care a intervenit vacanța funcției</div>
+  <div class="answer" data-correct="false">c) 3 luni de la data la care a intervenit vacanța funcției</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>14. În cazul expirării mandatului, alegerile pentru funcția de Președinte al Republicii Moldova se organizează:</p>
+  <div class="answer" data-correct="true">a) Cu cel mult 90 de zile înainte de data expirării mandatului Președintelui în funcție, însă nu mai târziu de 2 luni de la data la care a intervenit vacanța funcției</div>
+  <div class="answer" data-correct="false">b) Cu cel mult 60 de zile înainte de data expirării mandatului Președintelui în funcție, însă nu mai târziu de 3 luni de la data la care a intervenit vacanța funcției</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+
+<div class="question">
+  <p>15. Președintele Republicii Moldova în exercițiu candidează la alegerile prezidențiale. Fiind înregistrat în calitate de concurent electoral, șeful statului are obligația de a se suspenda din funcție odată cu începerea perioadei pentru campania electorală:</p>
+  <div class="answer" data-correct="false">a) Adevărat</div>
+  <div class="answer" data-correct="true">b) Fals</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>16. În cazul candidaților la funcția de Președinte al Republicii Moldova, Codul electoral nr. 325/2022 stabilește următoarele cerințe specifice:</p>
+  <div class="answer" data-correct="false">a) Deținerea studiilor generale obligatorii, inclusiv confirmarea faptului că nu este membru al vreunui partid politic</div>
+  <div class="answer" data-correct="true">b) Deținerea studiilor superioare, absolvite cu diplomă de licență sau echivalentă</div>
+  <div class="answer" data-correct="false">c) Nu stabilește careva cerințe specifice</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>17. Câte semnături trebuie să conțină listele de subscripție pentru susținerea candidatului/candidatei la funcția de Președinte al Republicii Moldova:</p>
+  <div class="answer" data-correct="true">a) Cel puțin 15000 și cel mult 25000 de semnături ale alegătorilor</div>
+  <div class="answer" data-correct="false">b) Cel puțin 10% din numărul de alegători înscriși în listele electorale</div>
+  <div class="answer" data-correct="false">c) Cel puțin 5000 și cel mult 15000 de semnături ale alegătorilor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>18. Pentru a fi înregistrați în calitate de concurenți electorali la alegerile prezidențiale, liste de subscripție vor depune:</p>
+  <div class="answer" data-correct="false">a) Doar candidații desemnați de partidele politice și blocurile electorale</div>
+  <div class="answer" data-correct="false">b) Doar candidații independenți</div>
+  <div class="answer" data-correct="true">c) Toți candidații la funcția de Președinte al Republicii Moldova</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>19. Conform Constituției, dreptul de a fi ales Președinte/Președintă a Republicii Moldova îl are:</p>
+  <div class="answer" data-correct="false">a) Cetățeanul/cetățeana Republicii Moldova cu drept de vot care are 35 de ani împliniți, locuiește permanent pe teritoriul Republicii Moldova nu mai puțin de 5 ani și posedă limba română</div>
+  <div class="answer" data-correct="true">b) Cetățeanul/cetățeana Republicii Moldova cu drept de vot care are 40 de ani împliniți, a locuit sau locuiește permanent pe teritoriul Republicii Moldova nu mai puțin de 10 ani și posedă limba română</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>20. D.B., candidat la funcția de Președinte al Republicii Moldova, a obținut în primul tur de scrutin 500 000 de voturi valabil exprimate din 1 200 000 de voturi total exprimate. Corespunzător, candidatul I.C. a acumulat 400 000 de voturi, iar candidatul P.C. – 300 000 de voturi. Rata de participare la alegeri a fost de 45%. Cine va fi declarat ales?</p>
+  <div class="answer" data-correct="false">a) Candidatul D.B., deoarece a acumulat cele mai multe voturi</div>
+  <div class="answer" data-correct="true">b) Nici un candidat, deoarece la urne s-au prezentat mai puțin de ½ din numărul de persoane înscrise în listele electorale și alegerile sunt nevalabile</div>
+  <div class="answer" data-correct="false">c) Câștigătorul/câștigătoarea va fi aleasă în urma organizării turului doi de scrutin la care vor participa candidații D.B. și I.C.</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>21. Cine stabilește data alegerilor parlamentare?</p>
+  <div class="answer" data-correct="false">a) Comisia Electorală Centrală</div>
+  <div class="answer" data-correct="false">b) Guvernul Republicii Moldova</div>
+  <div class="answer" data-correct="true">c) Parlamentul sau Președintele Republicii Moldova, după caz</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>22. Alegerile deputaților în Parlamentul Republicii Moldova se desfășoară:</p>
+  <div class="answer" data-correct="false">a) În cel mult 6 luni de la data dizolvării Parlamentului precedent</div>
+  <div class="answer" data-correct="true">b) În cel mult 3 luni de la data expirării mandatului Parlamentului sau de la data dizolvării acestuia</div>
+  <div class="answer" data-correct="false">c) În termen de 2 luni de la data expirării mandatului Parlamentului</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>23. Data alegerilor pentru funcția de Președinte al Republicii Moldova se stabilește prin:</p>
+  <div class="answer" data-correct="false">a) Hotărârea Comisiei Electorale Centrale</div>
+  <div class="answer" data-correct="true">b) Hotărârea Curții Constituționale</div>
+  <div class="answer" data-correct="false">c) Hotărârea Parlamentului</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>24. Candidați la funcția de deputat în Parlament pot fi persoanele cu drept de vot care dețin cetățenia Republicii Moldova și au împlinit vârsta de:</p>
+  <div class="answer" data-correct="false">a) 21 de ani, inclusiv în ziua alegerilor</div>
+  <div class="answer" data-correct="false">b) 18 ani, inclusiv în ziua depunerii actelor pentru înregistrare în calitate de candidat în alegeri</div>
+  <div class="answer" data-correct="true">c) 18 ani, inclusiv în ziua alegerilor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>25. Pentru a fi înregistrată în calitate de candidată independentă la funcția de deputată în Parlament, Comisiei Electorale Centrale i se prezintă liste de subscripție care conțin:</p>
+  <div class="answer" data-correct="true">a) semnăturile a cel puțin 1000 și cel mult 2500 de susținători cu drept de vot</div>
+  <div class="answer" data-correct="false">b) semnăturile a cel puțin 1500 și cel mult 2000 de susținători cu drept de vot</div>
+  <div class="answer" data-correct="false">c) semnăturile a cel puțin 2000 și cel mult 2500 de susținători cu drept de vot</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>26. La alegerile parlamentare, partidul politic sau blocul electoral înaintează lista de candidați, care:</p>
+  <div class="answer" data-correct="false">a) Nu va fi mai mică de 51 de persoane și nu va depăși numărul de 101 persoane</div>
+  <div class="answer" data-correct="true">b) Nu va fi mai mică de 53 de persoane și nu va depăși numărul de 103 persoane</div>
+  <div class="answer" data-correct="false">c) Nu va fi mai mică de 51 de persoane și nu va depăși numărul de 111 persoane</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>27. Concurenții electorali au dreptul să solicite efectuarea modificărilor în listele de candidați pentru alegerile parlamentare (schimbarea locului de ordine sau excluderea candidatului din lista înregistrată), cu cel puțin:</p>
+  <div class="answer" data-correct="true">a) 10 zile înainte de ziua alegerilor</div>
+  <div class="answer" data-correct="false">b) 7 zile înainte de ziua alegerilor</div>
+  <div class="answer" data-correct="false">c) 14 zile înainte de ziua alegerilor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>28. Candidatul independent la funcția de deputat în Parlament are dreptul să își retragă candidatura, dar nu mai târziu decât cu:</p>
+  <div class="answer" data-correct="false">a) 3 zile înainte de alegeri</div>
+  <div class="answer" data-correct="true">b) 7 zile înainte de alegeri</div>
+  <div class="answer" data-correct="false">c) 10 zile înainte de alegeri</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>29. Concurentul electoral se poate retrage din cursa electorală:</p>
+  <div class="answer" data-correct="false">a) Nu mai târziu de 14 zile înainte de ziua alegerilor</div>
+  <div class="answer" data-correct="true">b) Nu mai târziu de 10 zile înainte de ziua alegerilor</div>
+  <div class="answer" data-correct="false">c) Cel târziu cu 7 zile înainte de ziua alegerilor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>30. Candidatul independent la funcția de deputat în Parlament se consideră ales dacă numărul de voturi valabil exprimate obținut de el (pragul de reprezentare) constituie cel puțin:</p>
+  <div class="answer" data-correct="false">a) 1% din voturile valabil exprimate în ansamblu pe țară</div>
+  <div class="answer" data-correct="true">b) 2% din voturile valabil exprimate în ansamblu pe țară</div>
+  <div class="answer" data-correct="false">c) Nu este stabilit pragul de reprezentare pentru candidații independenți</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>31. În cadrul alegerilor parlamentare, pentru a participa la procesul de atribuire a mandatelor, blocul electoral trebuie să atingă pragul minim de reprezentare de:</p>
+  <div class="answer" data-correct="true">a) 7% din voturile valabil exprimate în ansamblu pe țară</div>
+  <div class="answer" data-correct="false">b) 5% din voturile valabil exprimate în ansamblu pe țară</div>
+  <div class="answer" data-correct="false">c) Nu este stabilit pragul de reprezentare</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>32. În cadrul alegerilor parlamentare, pentru a participa la procesul de atribuire a mandatelor, partidul politic trebuie să atingă pragul minim de reprezentare de:</p>
+  <div class="answer" data-correct="false">a) 7% din voturile valabil exprimate în ansamblu pe țară</div>
+  <div class="answer" data-correct="true">b) 5% din voturile valabil exprimate în ansamblu pe țară</div>
+  <div class="answer" data-correct="false">c) Nu este stabilit pragul de reprezentare</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>33. În cadrul alegerilor parlamentare, un concurent electoral înaintează Comisiei Electorale Centrale o cerere prin care solicită efectuarea modificărilor în lista sa de candidați. Potrivit cererii se solicită înlocuirea unui candidat din lista înregistrată prin retragerea acestuia și desemnarea unui alt candidat, precum și completarea listei cu încă 5 candidați, suplimentar celor 91 de candidați înregistrați anterior. Cererea a fost înregistrată la Comisie cu 14 zile înainte de data scrutinului. Care vor fi acțiunile Comisiei?</p>
+  <div class="answer" data-correct="true">a) Adoptă o hotărâre de admitere parțială a cererii, și anume doar în partea solicitării de retragere a unui candidat și desemnarea unui alt candidat la funcția de deputat</div>
+  <div class="answer" data-correct="false">b) Adoptă o hotărâre de respingere a cererii, ca fiind depusă cu depășirea termenului prevăzut de legislația electorală pentru efectuarea unor astfel de modificări</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+
+
+<div class="question">
+  <p>34. În cazul susținerii candidatului independent, dreptul de a colecta semnături îl au:</p>
+  <div class="answer" data-correct="true">a) Candidatul, precum și membrii grupului de inițiativă (colectorii) constituit în acest scop</div>
+  <div class="answer" data-correct="false">b) Doar membrii grupului de inițiativă (colectorii) constituit în acest scop</div>
+  <div class="answer" data-correct="false">c) Persoanele împuternicite prin procură de către candidat</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>35. Blocurile electorale constituite pentru participare la alegeri se înregistrează de către:</p>
+  <div class="answer" data-correct="true">a) Comisia Electorală Centrală - în cadrul tuturor tipurilor de alegeri</div>
+  <div class="answer" data-correct="false">b) Consiliile electorale de circumscripție corespunzătoare - în cazul alegerilor locale generale, iar Comisia Electorală Centrală - în cazul altor tipuri de alegeri</div>
+  <div class="answer" data-correct="false">c) Agenția Servicii Publice – indiferent de tipul scrutinului la care participă</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>36. La întocmirea listelor de candidați pentru alegerile parlamentare sau locale trebuie să se respecte următoarea cotă de gen:</p>
+  <div class="answer" data-correct="true">a) 40% pentru ambele sexe</div>
+  <div class="answer" data-correct="false">b) 30% pentru ambele sexe</div>
+  <div class="answer" data-correct="false">c) Legislația electorală nu prevede cote de gen</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>37. La întocmirea listelor de candidați pentru alegerile parlamentare sau locale trebuie să se respecte următoarea regulă de poziționare:</p>
+  <div class="answer" data-correct="true">a) minimum 4 candidați de alt gen la fiecare 10 locuri</div>
+  <div class="answer" data-correct="false">b) alternarea unui număr egal de femei și bărbați în listele de candidați</div>
+  <div class="answer" data-correct="false">c) minimul 2 candidați de alt gen la fiecare 5 locuri</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>38. Reprezentanții concurenților electorali sunt confirmați de organele electorale:</p>
+  <div class="answer" data-correct="false">a) În cel mult 24 de ore</div>
+  <div class="answer" data-correct="true">b) În cel mult 48 de ore</div>
+  <div class="answer" data-correct="false">c) În cel mult 3 zile</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>39. Au dreptul de a efectua filmări foto și/sau video în secția de votare cu înștiințarea președintelui organului electoral, fără a pune în pericol secretul votului și securitatea votării:</p>
+  <div class="answer" data-correct="true">a) Jurnaliștii legitimați și confirmați, observatorii acreditați și reprezentanții concurenților electorali confirmați</div>
+  <div class="answer" data-correct="false">b) Persoanele de încredere ale concurentului electoral confirmate</div>
+  <div class="answer" data-correct="false">c) Doar reprezentanții instituțiilor mass-media implicați în reflectarea alegerilor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>40. Reprezentantul concurentului electoral are dreptul inclusiv:</p>
+  <div class="answer" data-correct="false">a) Să acorde ajutor alegătorului care nu poate să completeze de sine stătător buletinul de vot</div>
+  <div class="answer" data-correct="true">b) Să participe la toate operațiunile electorale, la toate ședințele organului electoral care l-a confirmat, inclusiv în ziua alegerilor</div>
+  <div class="answer" data-correct="false">c) Să participe la procedura de votare a hotărârilor organului electoral, prin expunerea opțiunii sale de vot</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>41. Reprezentantul concurentului electoral, confirmat în modul stabilit, își poate desfășura activitatea și în cel de-al doilea tur de scrutin la alegerile prezidențiale și cele locale, dacă:</p>
+  <div class="answer" data-correct="false">a) Concurentul electoral pe care îl reprezintă participă la aceste alegeri (al doilea tur de scrutin/votarea repetată), fiind inclus corespunzător în buletinul de vot</div>
+  <div class="answer" data-correct="true">b) Organul electoral care l-a confirmat inițial în această calitate adoptă o hotărâre de prelungire a împuternicirilor acestuia în baza unei cereri a concurentului electoral</div>
+  <div class="answer" data-correct="false">c) Organul electoral care l-a confirmat inițial în această calitate adoptă, din oficiu, o hotărâre de prelungire a împuternicirilor acestuia</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>42. Candidatura desemnată pentru confirmare în calitate de reprezentant în biroul electoral sau consiliul electoral de circumscripție trebuie să fie persoana care are:</p>
+  <div class="answer" data-correct="false">a) studii superioare juridice, în administrație publică sau în științe politice</div>
+  <div class="answer" data-correct="true">b) împlinită vârsta de 23 ani și deține cetățenia Republicii Moldova</div>
+  <div class="answer" data-correct="false">c) împlinită vârsta de 18 ani, deține cetățenia Republicii Moldova și nu îi este interzisă exercitarea dreptului de vot</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>43. Reprezentantul concurentului electoral trebuie să fie o persoană calificată, având studii juridice, administrative ori în științe politice pentru a reprezenta concurentul în:</p>
+  <div class="answer" data-correct="false">a) Consiliul electoral de circumscripție electorală de nivelul II</div>
+  <div class="answer" data-correct="true">b) Comisia Electorală Centrală</div>
+  <div class="answer" data-correct="false">c) toate organele electorale</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>44. În cadrul aceleași perioade electorale, calitatea de reprezentant al concurentului electoral este incompatibilă cu:</p>
+  <div class="answer" data-correct="true">a) cea de conducător (membru) al grupului de inițiativă</div>
+  <div class="answer" data-correct="false">b) cea de trezorier sau persoană de încredere a concurentului electoral</div>
+  <div class="answer" data-correct="false">c) oricare din calitățile menționate la lit. a) și b)</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>45. În cadrul aceleași perioade electorale, calitatea de reprezentant al concurentului electoral este incompatibilă cu cea de candidat în alegeri:</p>
+  <div class="answer" data-correct="true">a) Adevărat</div>
+  <div class="answer" data-correct="false">b) Fals</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>46. Un partid politic și-a desemnat candidați la alegerile parlamentare și s-a înregistrat în calitate de participant la referendumul republican care se desfășoară în aceeași zi. Acest subiect are dreptul să desemneze:</p>
+  <div class="answer" data-correct="false">a) un singur reprezentant în organul electoral, la alegere, fie pentru scrutinul parlamentar, fie pentru referendum</div>
+  <div class="answer" data-correct="true">b) câte un reprezentant sau același reprezentant pentru fiecare calitate înregistrată</div>
+  <div class="answer" data-correct="false">c) doar un singur reprezentant în organul electoral pentru scrutinul parlamentar</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>47. Activitatea reprezentantului concurentului electoral începe din momentul:</p>
+  <div class="answer" data-correct="false">a) desemnării candidaților în alegeri</div>
+  <div class="answer" data-correct="true">b) începerii campaniei electorale</div>
+  <div class="answer" data-correct="false">c) confirmării în această calitate prin hotărârea organului electoral</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>48. Cererea de confirmare a reprezentantului concurentului electoral se depune:</p>
+  <div class="answer" data-correct="true">a) după înregistrarea concurentului electoral și se examinează în termen de 3 zile</div>
+  <div class="answer" data-correct="false">b) odată cu cererea de înregistrare a concurentului electoral și se examinează în interiorul termenului stabilit de legislația electorală</div>
+  <div class="answer" data-correct="false">c) în oricare din condițiile menționate la lit. a) și b)</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>49. Documentele privind confirmarea reprezentantului concurentului electoral se depun nu mai târziu de:</p>
+  <div class="answer" data-correct="false">a) 3 zile înainte de ziua alegerilor</div>
+  <div class="answer" data-correct="true">b) ziua precedentă zilei alegerilor</div>
+  <div class="answer" data-correct="false">c) 7 zile înainte de ziua alegerilor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>50. Activitatea reprezentantului concurentului electoral/participantului la referendum:</p>
+  <div class="answer" data-correct="true">a) poate fi remunerată sau realizată pe bază de voluntariat</div>
+  <div class="answer" data-correct="false">b) se realizează doar pe bază de voluntariat</div>
+  <div class="answer" data-correct="false">c) se remunerează în toate cazurile, iar valoarea remunerării nu poate fi mai mică de 50% din salariul mediu lunar pe economie stabilit pentru anul respectiv</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>51. Activitatea pe bază de voluntariat a reprezentantului concurentului electoral/participantului la referendum este:</p>
+  <div class="answer" data-correct="false">a) interzisă</div>
+  <div class="answer" data-correct="true">b) permisă, aceasta fiind evaluată și reflectată în raportul financiar</div>
+  <div class="answer" data-correct="false">c) permisă, fără a fi necesară evaluarea și reflectarea în raportul financiar</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>52. Indiferent de tipul scrutinului, partidele politice și blocurile electorale pot desemna, pentru perioada electorală, câte un reprezentant și în Comisia Electorală Centrală, dacă:</p>
+  <div class="answer" data-correct="true">a) și-au înregistrat candidați/listele de candidați în alegeri ori s-au înregistrat în calitate de participanți la referendum</div>
+  <div class="answer" data-correct="false">b) s-au înregistrat până la data intrării în vigoare a actului cu privire la stabilirea datei alegerilor</div>
+  <div class="answer" data-correct="false">c) au deschis un cont bancar special cu mențiunea „Fond electoral”</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>53. Partidele politice și blocurile electorale care și-au înregistrat candidați/listele de candidați în alegeri pot desemna, pentru perioada electorală, câte un reprezentant și în Comisia Electorală Centrală.</p>
+  <div class="answer" data-correct="true">a) Adevărat</div>
+  <div class="answer" data-correct="false">b) Fals</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>54. Persoana de încredere a concurentului electoral:</p>
+  <div class="answer" data-correct="false">a) Îl ajută la desfășurarea campaniei electorale și face agitație electorală în favoarea concurentului electoral</div>
+  <div class="answer" data-correct="true">b) Asistă la numărarea voturilor și primește o copie de pe procesul verbal cu privire la rezultatele numărării voturilor</div>
+  <div class="answer" data-correct="false">c) Face filmări foto și/sau video în secția de votare cu înștiințarea președintelui organului electoral respectiv</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>55. Termenul-limită pentru depunerea cererii privind confirmarea persoanelor de încredere, inclusiv substituirea celor confirmați anterior este:</p>
+  <div class="answer" data-correct="false">a) 7 zile înainte de ziua alegerilor</div>
+  <div class="answer" data-correct="true">b) 10 zile înainte de ziua alegerilor</div>
+  <div class="answer" data-correct="false">c) 1 zi înainte de ziua alegerilor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+<div class="question">
+  <p>56. Documentele privind confirmarea persoanelor de încredere ale concurentului electoral se prezintă organului electoral corespunzător doar:</p>
+  <div class="answer" data-correct="false">a) odată cu depunerea documentelor pentru înregistrare în calitate de concurent electoral, însă nu mai târziu de 30 de zile înainte de ziua alegerilor</div>
+  <div class="answer" data-correct="true">b) după înregistrarea concurentului electoral, însă nu mai târziu de 7 zile înainte de ziua alegerilor</div>
+  <div class="answer" data-correct="false">c) după înregistrarea concurentului electoral, însă nu mai târziu de 3 zile înainte de ziua alegerilor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>57. Consiliul electoral de circumscripție a fost sesizat în privința nerespectării interdicțiilor privind utilizarea resurselor administrative de către persoana de încredere a unui concurent electoral. În rezultatul examinării celor sesizate, Consiliul electoral a stabilit că persoana de încredere a concurentului electoral exercită o funcție publică, iar raporturile de serviciu ale acestuia nu au fost suspendate pentru perioada de activitate în calitate de persoană de încredere. Mai mult, în cadrul desfășurării activităților de campanie electorală pentru susținerea concurentului electoral, persoana de încredere a utilizat automobilul de serviciu. În acest caz, Consiliul electoral de circumscripție va decide:</p>
+  <div class="answer" data-correct="false">a) aplicarea sancțiunii sub formă de avertisment concurentului electoral și obligarea acestuia de a retrage împuternicirile persoanei de încredere</div>
+  <div class="answer" data-correct="true">b) anularea confirmării persoanei de încredere a concurentului electoral în termen de 3 zile de la sesizare, dar nu mai târziu de ziua alegerilor, inclusiv sesizarea organelor de drept pentru examinarea faptelor de utilizare ilicită a resurselor administrative</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>58. Concurenții electorali se înscriu în buletinul de vot în ordinea:</p>
+  <div class="answer" data-correct="true">a) Rezultată din tragerea la sorți efectuată de către organul electoral respectiv după încheierea perioadei de depunere a documentelor spre înregistrare de către toți candidații în alegeri</div>
+  <div class="answer" data-correct="false">b) Rezultată din tragerea la sorți efectuată zilnic de către organul electoral respectiv în perioada de depunere a documentelor spre înregistrare de către candidații în alegeri</div>
+  <div class="answer" data-correct="false">c) Depunerii seturilor de documente spre înregistrare de către candidații în alegerii</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>59. Contestația împotriva acțiunilor unui concurent electoral se depune la:</p>
+  <div class="answer" data-correct="true">a) Organul electoral care a înregistrat concurentul electoral respectiv</div>
+  <div class="answer" data-correct="false">b) Organul electoral ierarhic superior organului care a înregistrat concurentul electoral</div>
+  <div class="answer" data-correct="false">c) Instanța de judecată din circumscripția electorală respectivă</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>60. Contestația poate fi depusă:</p>
+  <div class="answer" data-correct="false">a) doar personal</div>
+  <div class="answer" data-correct="true">b) personal, expediată prin poștă sau transmisă prin poșta electronică</div>
+  <div class="answer" data-correct="false">c) personal sau transmisă prin poșta electronică</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>61. În procesul de examinare și soluționare a contestațiilor, organele electorale aplică principiile:</p>
+  <div class="answer" data-correct="false">a) independenței, colegialității și transparenței</div>
+  <div class="answer" data-correct="true">b) legalității, egalității de tratament și imparțialității</div>
+  <div class="answer" data-correct="true">c) enumerate la lit. a) și b)</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>62. La recepționarea contestației depuse personal, organul electoral o înregistrează imediat în Registrul de evidență a contestațiilor. Totodată, organul electoral asigură:</p>
+  <div class="answer" data-correct="false">a) efectuarea copiei de pe contestația depusă și restituirea contestatarului originalul acesteia</div>
+  <div class="answer" data-correct="true">b) aplicarea ștampilei pe contestație și înscrierea numărului de înregistrare, data și ora recepționării acesteia</div>
+  <div class="answer" data-correct="false">c) aplicarea ștampilei pe contestație și înscrierea datei recepționării acesteia</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>63. În perioada electorală, contestațiile se examinează, de regulă, în termen de:</p>
+  <div class="answer" data-correct="true">a) 3 zile din data depunerii</div>
+  <div class="answer" data-correct="false">b) 5 zile din data depunerii</div>
+  <div class="answer" data-correct="false">c) 7 zile din data depunerii</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>64. Imediat după înregistrarea contestației, președintele organului electoral:</p>
+  <div class="answer" data-correct="true">a) desemnează, din rândul membrilor acestuia, membrul raportor</div>
+  <div class="answer" data-correct="false">b) verifică, din oficiu, dacă a fost respectată competența autorităților publice în materie de examinare a contestației</div>
+  <div class="answer" data-correct="false">c) asigură convocarea ședinței pentru examinarea acesteia în cel mult 24 de ore de la recepționare</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>65. Cine poate depune contestații electorale?</p>
+  <div class="answer" data-correct="false">a) Alegătorul, candidatul desemnat și observatorul</div>
+  <div class="answer" data-correct="true">b) Alegătorul, candidatul desemnat, grupul de inițiativă, partidul politic (care are dreptul de a participa la scrutin), blocul electoral sau concurentul electoral</div>
+  <div class="answer" data-correct="false">c) Doar candidatul desemnat, partidul politic, blocul electoral sau concurentul electoral</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>66. În cazul alegerilor parlamentare, prezidențiale și referendumurilor republicane, numărul persoanelor de încredere se stabilește de către:</p>
+  <div class="answer" data-correct="true">a) Comisia Electorală Centrală</div>
+  <div class="answer" data-correct="false">b) Consiliul electoral de circumscripție de nivelul doi</div>
+  <div class="answer" data-correct="false">c) Biroul electoral al secției de votare</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>67. Persoanele de încredere ale concurenților electorali se confirmă de către:</p>
+  <div class="answer" data-correct="false">a) Comisia Electorală Centrală – în toate cazurile</div>
+  <div class="answer" data-correct="true">b) Biroul electoral al secției de votare</div>
+  <div class="answer" data-correct="false">c) Organul electoral care a înregistrat concurentul electoral respectiv</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>68. Drept criteriu de calcul al numărului persoanelor de încredere de care poate beneficia un concurent electoral este:</p>
+  <div class="answer" data-correct="false">a) numărul secțiilor de votare din aceeași circumscripție electorală stabilit pentru scrutinul precedent de același tip</div>
+  <div class="answer" data-correct="true">b) numărul de alegători din circumscripția electorală respectivă</div>
+  <div class="answer" data-correct="false">c) numărul populației din unitatea administrativ-teritorială respectivă</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>69. În baza documentelor prezentate, persoanele de încredere se confirmă de organul electoral competent în termen de:</p>
+  <div class="answer" data-correct="true">a) 5 zile de la primirea documentelor</div>
+  <div class="answer" data-correct="false">b) 10 zile de la primirea documentelor</div>
+  <div class="answer" data-correct="false">c) 3 zile de la primirea documentelor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>70. În cadrul aceleiași perioade electorale, o persoană de încredere poate fi concomitent:</p>
+  <div class="answer" data-correct="false">a) Candidat la o funcție electivă sau participant la referendum</div>
+  <div class="answer" data-correct="true">b) Reprezentant al concurentului electoral sau al participantului la referendum</div>
+  <div class="answer" data-correct="false">c) Alegător</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>71. Persoana de încredere își încetează activitatea:</p>
+  <div class="answer" data-correct="false">a) În ziua când sunt confirmate rezultatele alegerilor</div>
+  <div class="answer" data-correct="true">b) În ziua alegerilor</div>
+  <div class="answer" data-correct="false">c) În ziua de vineri înaintea zilei alegerilor</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>72. Persoana de încredere are dreptul:</p>
+  <div class="answer" data-correct="false">a) Să se afle în ziua alegerilor în perimetrul secției de votare sau localul secției de votare mai mult timp decât este necesar pentru a-și exercita dreptul de vot</div>
+  <div class="answer" data-correct="false">b) Să organizeze în campania electorală transportarea alegătorilor spre secțiile de votare</div>
+  <div class="answer" data-correct="true">c) Să reprezinte subiectul care l-a desemnat în cadrul programelor audiovizuale cu caracter electoral</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>73. Activitatea persoanei de încredere începe din momentul:</p>
+  <div class="answer" data-correct="true">a) confirmării acesteia prin hotărârea organului electoral, dar nu mai devreme de 30 de zile înainte de ziua votării</div>
+  <div class="answer" data-correct="false">b) înregistrării concurentului electoral pentru care va desfășura campanie electorală</div>
+  <div class="answer" data-correct="false">c) stabilit în programul calendaristic al acțiunilor electorale pentru scrutinul corespunzător, aprobat de Consiliul electoral de circumscripție de nivelul al doilea</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>74. În cazul desfășurării celui de-al doilea tur de scrutin la alegerile prezidențiale și cele locale, precum și în cazul organizării votării repetate la toate tipurile de scrutin, persoanele de încredere confirmate în modul corespunzător își pot desfășura activitatea:</p>
+  <div class="answer" data-correct="true">a) dacă organul electoral care i-a confirmat inițial în această calitate adoptă o hotărâre de prelungire a împuternicirilor acestora în baza unei cereri a concurentului electoral</div>
+  <div class="answer" data-correct="false">b) din data stabilirii, prin hotărârea organului electoral, al celui de-al doilea tur de scrutin sau al votării repetate</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>75. Persoanele de încredere își desfășoară activitatea în raza:</p>
+  <div class="answer" data-correct="false">a) circumscripției electorale în care activează Consiliul electoral care i-a confirmat în această calitate</div>
+  <div class="answer" data-correct="true">b) circumscripției electorale pentru care au fost confirmați, în temeiul hotărârii organului electoral corespunzător</div>
+  <div class="answer" data-correct="false">c) secțiilor de votare indicate de concurentul electoral care i-a desemnat în această calitate</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>76. Activitatea pe bază de voluntariat ale persoanelor de încredere este:</p>
+  <div class="answer" data-correct="true">a) permisă, aceasta fiind evaluată și reflectată în raportul financiar al concurentului electoral/participantului la referendum</div>
+  <div class="answer" data-correct="false">b) interzisă</div>
+  <div class="answer" data-correct="false">c) permisă, fără a fi necesară evaluarea și reflectarea în raportul financiar al concurentului electoral/participantului la referendum</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>77. Partidele politice:</p>
+  <div class="answer" data-correct="false">a) Nu au dreptul să deschidă conturi bancare în străinătate</div>
+  <div class="answer" data-correct="true">b) Au dreptul să deschidă conturi bancare în statele membre ale Uniunii Europene</div>
+  <div class="answer" data-correct="false">c) Au dreptul să deschidă conturi bancare în străinătate, cu condiția declarării acestora</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>78. Partidele politice:</p>
+  <div class="answer" data-correct="false">a) Pot organiza acte de caritate sau de sponsorizare, pot practica activități comerciale cu bunuri de consum sau de primă necesitate, inclusiv pot face publicitate acestora</div>
+  <div class="answer" data-correct="false">b) Nu pot organiza acte de caritate sau de sponsorizare, nu pot practica activități comerciale cu bunuri de consum sau de primă necesitate, inclusiv nu pot face publicitate acestora</div>
+  <div class="answer" data-correct="true">c) Pot organiza acte de caritate sau de sponsorizare, pot practica activități comerciale cu bunuri de consum sau de primă necesitate, inclusiv pot face publicitate acestora, doar cu avizul pozitiv al Comisiei Electorale Centrale</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>79. Cetățenii Republicii Moldova care obțin venituri în afara țării:</p>
+  <div class="answer" data-correct="false">a) Nu pot face donații partidelor politice</div>
+  <div class="answer" data-correct="true">b) Pot face donații unui sau mai multor partide politice, cu condiția că acestea nu vor depăși suma a 6 salarii medii lunare pe economie pe anul respectiv</div>
+  <div class="answer" data-correct="false">c) Legislația nu stabilește restricții în acest sens</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>80. Auditul asupra utilizării alocațiilor primite de partidele politice de la bugetul de stat este exercitat de:</p>
+  <div class="answer" data-correct="false">a) Comisia Electorală Centrală</div>
+  <div class="answer" data-correct="true">b) Curtea de Conturi</div>
+  <div class="answer" data-correct="false">c) Inspecția Financiară</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>81. Un partid politic a solicitat Comisiei Electorale Centrale confirmarea lui A.B. în calitate de persoană responsabilă de finanțele partidului, anexând actele care atestă că A.B. are studii superioare de master în științe economice și nu deține funcții de demnitate publică. Comisia Electorală Centrală:</p>
+  <div class="answer" data-correct="false">a) Va transmite solicitarea conform competenței la Ministerul Finanțelor</div>
+  <div class="answer" data-correct="true">b) Va confirma prin hotărâre pe A.B. în calitate de trezorier din partea partidului</div>
+  <div class="answer" data-correct="false">c) Va transmite solicitarea conform competenței la Curtea de Conturi</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>82. Rapoartele anuale privind gestiunea financiară a partidelor politice se prezintă:</p>
+  <div class="answer" data-correct="false">a) Până la 15 ianuarie</div>
+  <div class="answer" data-correct="true">b) Până la 31 martie</div>
+  <div class="answer" data-correct="false">c) Până la 31 decembrie</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  const updateScoreboard = () => {
+    const questions = document.querySelectorAll('.question');
+    let correct = 0;
+    let incorrect = 0;
+    let unanswered = 0;
+
+    questions.forEach(q => {
+      if (!q.classList.contains('answered')) {
+        unanswered++;
+      } else {
+        const selected = q.querySelector('.answer.correct, .answer.incorrect');
+        if (selected) {
+          if (selected.classList.contains('correct')) {
+            correct++;
+          } else {
+            incorrect++;
+          }
+        }
+      }
+    });
+
+    document.getElementById('correctCount').textContent = correct;
+    document.getElementById('incorrectCount').textContent = incorrect;
+    document.getElementById('unansweredCount').textContent = unanswered;
+  };
+
+  document.querySelectorAll('.question').forEach(question => {
+    const answers = question.querySelectorAll('.answer');
+    const resetButton = question.querySelector('.reset-button');
+
+    answers.forEach(answer => {
+      answer.addEventListener('click', function () {
+        if (question.classList.contains('answered')) return;
+
+        const isCorrect = this.dataset.correct === "true";
+        this.classList.add(isCorrect ? 'correct' : 'incorrect');
+
+        answers.forEach(a => a.style.pointerEvents = 'none');
+        question.classList.add('answered');
+
+        updateScoreboard();
+      });
+    });
+
+    resetButton.addEventListener('click', function () {
+      answers.forEach(a => {
+        a.classList.remove('correct', 'incorrect');
+        a.style.pointerEvents = 'auto';
+      });
+      question.classList.remove('answered');
+
+      updateScoreboard();
+    });
+  });
+
+  updateScoreboard(); // initializează la început
+</script>
+
+</body>
+
+
+
+</html>
