@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test HTML cu Scor</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .question {
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .question p {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .answer {
+      display: block;
+      margin: 5px 0;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .answer.correct {
+      background-color: #c8e6c9;
+      border-color: #2e7d32;
+    }
+
+    .answer.incorrect {
+      background-color: #ffcdd2;
+      border-color: #c62828;
+    }
+
+    .reset-button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .reset-button:hover {
+      background-color: #ccc;
+    }
+
+    #scoreboard {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #f8f8f8;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: sans-serif;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+<div id="scoreboard">
+  ✅ Corecte: <span id="correctCount">0</span><br />
+  ❌ Greșite: <span id="incorrectCount">0</span><br />
+  ❓ Nerăspunse: <span id="unansweredCount">10</span>
+</div>
+
+<!-- Întrebările -->
+<!-- Pentru scurtime, vom include doar 2 exemple. Poți adăuga restul la fel ca în fișierul original -->
+
+<div class="question">
+  <p>1. Dreptul de vot se exercită de la vârsta de:</p>
+  <div class="answer" data-correct="true">a) 18 ani</div>
+  <div class="answer" data-correct="false">b) 25 ani</div>
+  <div class="answer" data-correct="false">c) 23 ani</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<div class="question">
+  <p>2. Identificați expresia care exprimă întocmai elementele constituționale ale sistemului electoral:</p>
+  <div class="answer" data-correct="false">a) Alegerile sunt periodice și au loc prin sufragiu universal, egal și secret</div>
+  <div class="answer" data-correct="true">b) Alegerile sunt periodice și au loc prin sufragiu universal, egal, direct, secret și liber exprimat</div>
+  <div class="answer" data-correct="false">c) Alegerile sunt periodice și au loc prin sufragiu cenzitar, egal, direct, secret și liber exprimat</div>
+  <button class="reset-button">Resetează</button>
+</div>
+
+<script>
+  const updateScoreboard = () => {
+    const questions = document.querySelectorAll('.question');
+    let correct = 0;
+    let incorrect = 0;
+    let unanswered = 0;
+
+    questions.forEach(q => {
+      if (!q.classList.contains('answered')) {
+        unanswered++;
+      } else {
+        const selected = q.querySelector('.answer.correct, .answer.incorrect');
+        if (selected) {
+          if (selected.classList.contains('correct')) {
+            correct++;
+          } else {
+            incorrect++;
+          }
+        }
+      }
+    });
+
+    document.getElementById('correctCount').textContent = correct;
+    document.getElementById('incorrectCount').textContent = incorrect;
+    document.getElementById('unansweredCount').textContent = unanswered;
+  };
+
+  document.querySelectorAll('.question').forEach(question => {
+    const answers = question.querySelectorAll('.answer');
+    const resetButton = question.querySelector('.reset-button');
+
+    answers.forEach(answer => {
+      answer.addEventListener('click', function () {
+        if (question.classList.contains('answered')) return;
+
+        const isCorrect = this.dataset.correct === "true";
+        this.classList.add(isCorrect ? 'correct' : 'incorrect');
+
+        answers.forEach(a => a.style.pointerEvents = 'none');
+        question.classList.add('answered');
+
+        updateScoreboard();
+      });
+    });
+
+    resetButton.addEventListener('click', function () {
+      answers.forEach(a => {
+        a.classList.remove('correct', 'incorrect');
+        a.style.pointerEvents = 'auto';
+      });
+      question.classList.remove('answered');
+
+      updateScoreboard();
+    });
+  });
+
+  updateScoreboard();
+</script>
+
+</body>
+</html>
